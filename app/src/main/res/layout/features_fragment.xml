@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#46D4D5D7"
+    tools:context=".ui.features.FeaturesFragment">
+
+   <com.cooltechworks.views.shimmer.ShimmerRecyclerView
+       android:id="@+id/rv_features"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       tools:itemCount="10"
+       android:layout_gravity="center"
+       app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+       app:spanCount="2"
+       tools:listitem="@layout/item_features"/>
+</RelativeLayout></layout>

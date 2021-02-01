@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_app"
+    app:startDestination="@id/usersFragment">
+
+    <fragment
+        android:id="@+id/usersFragment"
+        android:name="com.trian.ui.users.UsersFragment"
+        android:label="users_fragment"
+        tools:layout="@layout/users_fragment" >
+        <action
+            android:id="@+id/act_usersFragment_to_featuresFragment"
+            app:destination="@id/featuresFragment" />
+        <action
+            android:id="@+id/act_usersFragment_to_settingsFragment"
+            app:destination="@id/settingsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/featuresFragment"
+        android:name="com.trian.ui.features.FeaturesFragment"
+        android:label="features_fragment"
+        tools:layout="@layout/features_fragment" />
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.trian.ui.settings.SettingsFragment"
+        android:label="settings_fragment"
+        tools:layout="@layout/settings_fragment" />
+</navigation>
