@@ -9,10 +9,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.CexupDevice">
-        <uses-library android:name="android.test.runner"
+        <uses-library
+            android:name="android.test.runner"
             android:required="false" />
 
-        <activity android:name=".activity.AuthActivity" />
+        <activity
+            android:name=".activity.AuthActivity"
+            android:windowSoftInputMode="stateVisible|adjustResize"
+            android:screenOrientation="portrait" />
+
         <activity android:name=".activity.AppActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
